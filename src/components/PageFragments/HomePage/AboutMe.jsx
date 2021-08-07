@@ -52,6 +52,7 @@ const AboutMe = () => {
             textH3="Paragon Flow"
             textH4="Chief Design Officer"
             textH5="2019 - Present"
+            href="https://paragonflow.com/"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
@@ -61,6 +62,7 @@ const AboutMe = () => {
             textH4="Jump Design Group"
             textH3="IT Intern"
             textH5="Summer 2019"
+            href="https://jumpdesigngroup.com/"
             height={60}
             width={60}
           />
