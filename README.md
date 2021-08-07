@@ -1,11 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://rolwinreevan.com">
-    <img alt="Gatsby" src="https://github.com/rolwin100/rolwinreevan_gatsby_blog/blob/master/src/images/icon.png" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's RolwinReevan Portfolio template using <a href='https://ant.design/' target='_blank'>ant-design</a>
+  This portfolio was build off of Gatsby's RolwinReevan Portfolio template using <a href='https://ant.design/' target='_blank'>ant-design</a>
 </h1>
 <h3 align="center">Probably the most beautiful 😍 gatsby starter template</h3>
 
@@ -20,16 +15,16 @@ This starter consists of ant design system you can use it for your personal blog
 
     ```shell
     
-    git clone https://github.com/rolwin100/rolwinreevan_gatsby_blog.git
-    cd rolwinreevan_gatsby_blog 
-    npm install
+    git clone https://github.com/jordan-s-ramirez/mySite.git
+    cd mySite
+    yarn
     ```
 
 1.  **Start developing.**
 
 
     ```shell
-    gatsby develop
+    yarn develop
     ```
 
 1.  **Open the source code and start editing!**
