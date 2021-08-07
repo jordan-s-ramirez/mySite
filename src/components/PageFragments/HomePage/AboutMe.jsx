@@ -6,13 +6,13 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hello !! My name is Jordan Ramirez... MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. 
-  MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. 
-  MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. 
-  MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. `,
-  paraTwo: `Currently I work... MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. 
-  MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. 
-  MORE COMING SOON. MORE COMING SOON. MORE COMING SOON. I'm always a learner and a self taught programmer.`,
+  paraOne: `At Purdue University, I am currently majoring in Computer Engineering, 
+  where I'm taking classes in a range of fields from coding to electrical engineering. 
+  During my time at Purdue, I have enjoyed many fields of engineering through clubs and 
+  activities. For example, in Engineers without Borders, I learned a lot about the engineering 
+  design processes and civil engineering. Also, in my undergraduate research, I dove deep into 
+  deep reinforcement learning for indoor robot navigation.`,
+  paraTwo: '',
 };
 
 const AboutMe = () => {
@@ -32,40 +32,46 @@ const AboutMe = () => {
         </p>
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
+      <h1 className="titleSeparate">Work Experiance</h1>
       <Row gutter={[20, 20]}>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="location.png"
+            img="thales.jpg"
+            href="https://www.thalesgroup.com/"
             height={60}
-            alt="location image"
-            textH4="Born and bought up in"
-            textH3="New York, NY"
+            alt="Thales"
+            textH3="Thales"
+            textH4="Field Test Engineer"
+            textH5="Summer 2021"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="meeting.png"
-            alt="meeting image"
-            textH4="Socially Awkward"
-            textH3="At times"
+            img="paragonflow.jpg"
+            alt="Paragon Flow"
+            textH3="Paragon Flow"
+            textH4="Chief Design Officer"
+            textH5="2019 - Present"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="web.png"
-            alt="web image"
-            textH4="Self Taught Programmer"
-            textH3="Thanks to the Web Resources"
+            img="jump.jpg"
+            alt="Jump Design Group"
+            textH4="Jump Design Group"
+            textH3="IT Intern"
+            textH5="Summer 2019"
             height={60}
             width={60}
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="graduation.png"
-            alt="graduation image"
-            textH4="Pursuing B. Science in"
-            textH3="Computer Engineering"
+            img="purdue.png"
+            alt="purdue"
+            textH4="Undergraduate Research Assistant"
+            textH3="Purdue Smart Cities"
+            textH5="Jan 2020 - May 2020"
             height={60}
             width={60}
           />
