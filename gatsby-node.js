@@ -49,6 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
       .filter(({ node: { fileAbsolutePath } }) => fileAbsolutePath.match(regexForIndex));
 
     /* Tag pages */
+    /*
     const allTags = [];
     defaultPosts.forEach(({ node }) => {
       node.frontmatter.tags.forEach((tag) => {
@@ -66,7 +67,7 @@ exports.createPages = ({ actions, graphql }) => {
           },
         });
       });
-
+      */
     return 1;
   });
 };

@@ -12,7 +12,6 @@ module.exports = {
     projects: 'projects',
     contact: 'contact',
     resume: 'resume',
-    tag: 'tags',
   },
   social: {
     github: 'https://github.com/jordan-s-ramirez',
@@ -58,6 +57,5 @@ module.exports = {
       description: 'A general purpose programming language that is widely used for developing various applications.',
       color: '#f9c646',
     },
-
   },
 };
