@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Affix, Layout, Row, Col,
 } from 'antd';
+import { DownloadOutlined } from '@ant-design/icons';
 import FA from 'react-fontawesome';
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -59,7 +60,7 @@ const DomContent = () => (
         </li>
       </ul>
       <div className={style.resumeDownload}>
-        <a href="../resume.pdf" download target="_blank">Download CV</a>
+        <a href="../resume.pdf" download target="_blank">Resume <DownloadOutlined /></a>
       </div>
     </div>
   </aside>
