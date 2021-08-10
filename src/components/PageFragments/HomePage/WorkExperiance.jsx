@@ -4,7 +4,7 @@ import AboutTile from '../../AbouTile';
 
 const WorkExperiance = () => (
   <>
-    <h1 className="titleSeparate">Work Experiance</h1>
+    <h1 className="titleSeparate">Work Experience</h1>
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12} lg={8}>
         <AboutTile
@@ -31,8 +31,8 @@ const WorkExperiance = () => (
         <AboutTile
           img="jump.jpg"
           alt="Jump Design Group"
-          textH4="Jump Design Group"
-          textH3="IT Intern"
+          textH3="Jump Design Group"
+          textH4="IT Intern"
           textH5="Summer 2019"
           href="https://jumpdesigngroup.com/"
           height={60}

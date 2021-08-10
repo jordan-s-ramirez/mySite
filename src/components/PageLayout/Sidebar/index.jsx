@@ -1,8 +1,9 @@
 import React from 'react';
 import {
-  Affix, Layout, Row, Col,
+  Affix, Layout, Row, Col, Button
 } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
+import {DownloadOutlined} from '@ant-design/icons'
+//import ButtonDownload from '../../PageFragments/ButtonDownload/index.jsx'
 import FA from 'react-fontawesome';
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -10,6 +11,7 @@ import { globalHistory } from '@reach/router';
 import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
 import Config from '../../../../config';
+
 
 const { Content } = Layout;
 const {
@@ -59,8 +61,10 @@ const DomContent = () => (
           </a>
         </li>
       </ul>
-      <div className={style.resumeDownload}>
-        <a href="../resume.pdf" download target="_blank">Resume <DownloadOutlined /></a>
+      <div >
+        <a href="../resume.pdf" download target="_blank">
+          <Button type="primary" shape="round" icon={<DownloadOutlined/>} style={{ background: '#304CFD', borderColor: "#304CFD" }}>Download Resume </Button>
+        </a>
       </div>
     </div>
   </aside>
