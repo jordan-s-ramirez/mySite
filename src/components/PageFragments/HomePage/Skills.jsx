@@ -4,54 +4,46 @@ import {
 } from 'antd';
 
 const { Panel } = Collapse;
-
-const tag0Y = "cyan";
-const tag2Y = "blue";
-const tag4Y = "red";
-
+const colorTag = "geekblue";
 const Skills = () => (
   <>
     <h1 className="titleSeparate">Skills</h1>
     <Collapse defaultActiveKey={['1', '2']}>
       <Panel header="Hard Skills" key="1">
-        <Row align="center">
-          <Tag color={tag0Y}>1-2 Years Experience</Tag>
-          <Tag color={tag2Y}>2-4 Years Experience</Tag>
-          <Tag color={tag4Y}>4-6 Years Experience</Tag>
-        </Row>
         <Row gutter={[20, 20]}>
-          <Col xs={24} sm={24} md={12} >
+          <Col xs={24} sm={24} md={12}>
             <Divider orientation="center">Technical Skills</Divider>
-            <Tag color={tag0Y}>Neural Networks</Tag>
-            <Tag color={tag0Y}>TensorFlow/Keras</Tag>
-            <Tag color={tag4Y}>Adobe Software Suite</Tag>
-            <Tag color={tag4Y}>Microsoft Excel</Tag>
-            <Tag color={tag4Y}>Microsoft Office</Tag>
-            <Tag color={tag2Y}>Linear Circut Design</Tag>
-            <Tag color={tag2Y}>Full Stack Developer</Tag>
+            <Tag color={colorTag}>Neural Networks</Tag>
+            <Tag color={colorTag}>TensorFlow/Keras</Tag>
+            <Tag color={colorTag}>React Native</Tag>
+            <Tag color={colorTag}>Adobe Software Suite</Tag>
+            <Tag color={colorTag}>Microsoft Excel</Tag>
+            <Tag color={colorTag}>Microsoft Office</Tag>
+            <Tag color={colorTag}>Linear Circut Design</Tag>
+            <Tag color={colorTag}>Full Stack Developer</Tag>
           </Col>
           <Col xs={24} sm={24} md={12} >
             <Divider orientation="center">Programing Languages</Divider>
-            <Tag color={tag2Y}>Java</Tag>
-            <Tag color={tag2Y}>C Programming</Tag>
-            <Tag color={tag4Y}>Python</Tag>
-            <Tag color={tag0Y}>Assembly Arm Cortex</Tag>
-            <Tag color={tag4Y}>HTML/CSS</Tag>
-            <Tag color={tag2Y}>JS</Tag>
+            <Tag color={colorTag}>Java</Tag>
+            <Tag color={colorTag}>C Programming</Tag>
+            <Tag color={colorTag}>Python</Tag>
+            <Tag color={colorTag}>Assembly Arm Cortex</Tag>
+            <Tag color={colorTag}>HTML/CSS</Tag>
+            <Tag color={colorTag}>JS</Tag>
           </Col>
         </Row>
       </Panel>
       <Panel header="Soft Skills" key="2">
-        <Tag color="geekblue">Integrity</Tag>
-        <Tag color="geekblue">Dependability</Tag>
-        <Tag color="geekblue">Effective Communication</Tag>
-        <Tag color="geekblue">Opened-mindedness</Tag>
-        <Tag color="geekblue">Teamwork</Tag>
-        <Tag color="geekblue">Problem Solving</Tag>
-        <Tag color="geekblue">Critical Thinking</Tag>
-        <Tag color="geekblue">Adaptability</Tag>
-        <Tag color="geekblue">Orginization</Tag>
-        <Tag color="geekblue">Cross Functional</Tag>
+        <Tag color={colorTag}>Integrity</Tag>
+        <Tag color={colorTag}>Dependability</Tag>
+        <Tag color={colorTag}>Effective Communication</Tag>
+        <Tag color={colorTag}>Opened-mindedness</Tag>
+        <Tag color={colorTag}>Teamwork</Tag>
+        <Tag color={colorTag}>Problem Solving</Tag>
+        <Tag color={colorTag}>Critical Thinking</Tag>
+        <Tag color={colorTag}>Adaptability</Tag>
+        <Tag color={colorTag}>Orginization</Tag>
+        <Tag color={colorTag}>Cross Functional</Tag>
       </Panel>
     </Collapse>
   </>
