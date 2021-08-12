@@ -18,7 +18,6 @@ class Work extends React.Component {
     this.singleChange3 = this.singleChange3.bind(this);
     this.singleChange4 = this.singleChange4.bind(this);
   }
-
   handleChange(event) {
     if(toggle) {
       activeList = ['1', '2', '3', '4'];
@@ -163,6 +162,5 @@ class Work extends React.Component {
       </>
     );
   }
-  
 }
 export default Work;
