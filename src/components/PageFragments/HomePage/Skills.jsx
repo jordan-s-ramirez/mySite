@@ -9,7 +9,7 @@ const Skills = () => (
   <>
     <h1 className="titleSeparate">Skills</h1>
     <Collapse defaultActiveKey={['1', '2']}>
-      <Panel header="Hard Skills" key="1">
+      <Panel header="Hard Skills" key="1" showArrow={false}>
         <Row gutter={[20, 20]}>
           <Col xs={24} sm={24} md={12}>
             <Divider orientation="center">Technical Skills</Divider>
@@ -33,7 +33,7 @@ const Skills = () => (
           </Col>
         </Row>
       </Panel>
-      <Panel header="Soft Skills" key="2">
+      <Panel header="Soft Skills" key="2" showArrow={false}>
         <Tag color={colorTag}>Integrity</Tag>
         <Tag color={colorTag}>Dependability</Tag>
         <Tag color={colorTag}>Effective Communication</Tag>
