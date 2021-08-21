@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Affix, Layout, Row, Col, Button
-} from 'antd';
+import { Affix, Layout, Row, Col, Button } from 'antd';
 import {DownloadOutlined} from '@ant-design/icons'
 //import ButtonDownload from '../../PageFragments/ButtonDownload/index.jsx'
 import FA from 'react-fontawesome';

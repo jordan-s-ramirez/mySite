@@ -7,6 +7,7 @@ const { Panel } = Collapse;
 let toggle = true;
 let activeList = ['0', '0', '0', '0'];
 let keyGen = 0;
+
 class Work extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +32,7 @@ class Work extends React.Component {
 
   singleChange(event) {
     console.log(keyGen);
-    if (activeList[keyGen - 1] == '0') {
+    if (activeList[keyGen - 1] === '0') {
       activeList[keyGen - 1] = String(keyGen);
     } else {
       activeList[keyGen - 1] = '0';
@@ -40,9 +41,9 @@ class Work extends React.Component {
     console.log(activeList);
   }
 
-  singleChange1(event) {
+  singleChange1() {
     console.log(keyGen);
-    if (activeList[0] == '0') {
+    if (activeList[0] === '0') {
       activeList[0] = '1';
     } else {
       activeList[0] = '0';
@@ -51,9 +52,9 @@ class Work extends React.Component {
     console.log(activeList);
   }
 
-  singleChange2(event) {
+  singleChange2() {
     console.log(keyGen);
-    if (activeList[1] == '0') {
+    if (activeList[1] === '0') {
       activeList[1] = '2';
     } else {
       activeList[1] = '0';
@@ -62,9 +63,9 @@ class Work extends React.Component {
     console.log(activeList);
   }
 
-  singleChange3(event) {
+  singleChange3() {
     console.log(keyGen);
-    if (activeList[2] == '0') {
+    if (activeList[2] === '0') {
       activeList[2] = '3';
     } else {
       activeList[2] = '0';
@@ -73,9 +74,9 @@ class Work extends React.Component {
     console.log(activeList);
   }
 
-  singleChange4(event) {
+  singleChange4() {
     console.log(keyGen);
-    if (activeList[3] == '0') {
+    if (activeList[3] === '0') {
       activeList[3] = '4';
     } else {
       activeList[3] = '0';
@@ -87,7 +88,7 @@ class Work extends React.Component {
   render() {
     return (
       <>
-        <Row align="middle" style={{marginBottom: '2em'}}>
+        <Row align="middle" style={{ marginBottom: '2em' }}>
           <Col flex={4}>
             <h1 className="titleSeparate" align="left">
               Work Experience
@@ -102,59 +103,61 @@ class Work extends React.Component {
             />
           </Col>
         </Row>
-        <Timeline mode="right" pending="Open to Interviews" reverse>
-          <Timeline.Item label="May 2019 - Aug 2019" color="#1269C7">
-            <div onClick={((keyGen = 1), this.singleChange1)}>
-              <Collapse ghost activeKey={this.state.activeKey}>
-                <Panel header="IT Intern - Jump Design Group" key="1">
-                  <p className="textAlign">
-                    Researched and implemented innovative new intranet system. Maintained critical
-                    systems and electronics to the highest standards.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-          </Timeline.Item>
-          <Timeline.Item label="Aug 2020 - March 2021" color="#1269C7">
-            <div onClick={((keyGen = 2), this.singleChange2)}>
-              <Collapse ghost activeKey={this.state.activeKey}>
-                <Panel header="Undergraduate Research Assistant - Purdue Smart Cities" key="2">
-                  <p className="textAlign">
-                    Designing systems for deep learning reinforcement for indoor robot navigation,
-                    using Python and TensorFlow. Used the documentation tool, Confluence, to record
-                    and share research.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-          </Timeline.Item>
-          <Timeline.Item label="Sep 2019 - Now" color="#1269C7">
-            <div onClick={((keyGen = 3), this.singleChange3)}>
-              <Collapse ghost activeKey={this.state.activeKey}>
-                <Panel header="Chief Design Officer - ParagonFlow" key="3">
-                  <p className="textAlign">
-                    Lead and manage design initiatives company-wide, including graphic, UI/UX and
-                    brand design. Lead and manage design initiatives company-wide, including
-                    graphic, UI/UX and brand design.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-          </Timeline.Item>
-          <Timeline.Item label="May 2020 - Aug 2020" color="#1269C7">
-            <div onClick={((keyGen = 4), this.singleChange4)}>
-              <Collapse ghost activeKey={this.state.activeKey}>
-                <Panel header="Field Test Engineer - Thales" key="4">
-                  <p className="textAlign">
-                    Maintained and monitored NYC Subway's communication based train controls. Worked
-                    cross functional with Siemens and New Tech. Field tested new version of Zone
-                    Controller.
-                  </p>
-                </Panel>
-              </Collapse>
-            </div>
-          </Timeline.Item>
-        </Timeline>
+        <Col push>
+          <Timeline mode="right" pending="Open to Interviews" reverse>
+            <Timeline.Item label="May 2019 - Aug 2019" color="#1269C7">
+              <div onClick={((keyGen = 1), this.singleChange1)}>
+                <Collapse ghost activeKey={this.state.activeKey}>
+                  <Panel header="IT Intern - Jump Design Group" key="1">
+                    <p className="textAlign">
+                      Researched and implemented innovative new intranet system. Maintained critical
+                      systems and electronics to the highest standards.
+                    </p>
+                  </Panel>
+                </Collapse>
+              </div>
+            </Timeline.Item>
+            <Timeline.Item label="Aug 2020 - March 2021" color="#1269C7">
+              <div onClick={((keyGen = 2), this.singleChange2)}>
+                <Collapse ghost activeKey={this.state.activeKey}>
+                  <Panel header="Undergraduate Research Assistant - Purdue Smart Cities" key="2">
+                    <p className="textAlign">
+                      Designing systems for deep learning reinforcement for indoor robot navigation,
+                      using Python and TensorFlow. Used the documentation tool, Confluence, to
+                      record and share research.
+                    </p>
+                  </Panel>
+                </Collapse>
+              </div>
+            </Timeline.Item>
+            <Timeline.Item label="Sep 2019 - Now" color="#1269C7">
+              <div onClick={((keyGen = 3), this.singleChange3)}>
+                <Collapse ghost activeKey={this.state.activeKey}>
+                  <Panel header="Chief Design Officer - ParagonFlow" key="3">
+                    <p className="textAlign">
+                      Lead and manage design initiatives company-wide, including graphic, UI/UX and
+                      brand design. Lead and manage design initiatives company-wide, including
+                      graphic, UI/UX and brand design.
+                    </p>
+                  </Panel>
+                </Collapse>
+              </div>
+            </Timeline.Item>
+            <Timeline.Item label="May 2020 - Aug 2020" color="#1269C7">
+              <div onClick={((keyGen = 4), this.singleChange4)}>
+                <Collapse ghost activeKey={this.state.activeKey}>
+                  <Panel header="Field Test Engineer - Thales" key="4">
+                    <p className="textAlign">
+                      Maintained and monitored NYC Subway's communication based train controls.
+                      Worked cross functional with Siemens and New Tech. Field tested new version of
+                      Zone Controller.
+                    </p>
+                  </Panel>
+                </Collapse>
+              </div>
+            </Timeline.Item>
+          </Timeline>
+        </Col>
       </>
     );
   }
