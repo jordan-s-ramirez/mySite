@@ -104,11 +104,11 @@ class Work extends React.Component {
           </Col>
         </Row>
         <Col push>
-          <Timeline mode="right" pending="Open to Interviews" reverse>
-            <Timeline.Item label="May 2019 - Aug 2019" color="#1269C7">
+          <Timeline pending="Open to Interviews" reverse>
+            <Timeline.Item color="#1269C7">
               <div onClick={((keyGen = 1), this.singleChange1)}>
                 <Collapse ghost activeKey={this.state.activeKey}>
-                  <Panel header="IT Intern - Jump Design Group" key="1">
+                  <Panel header="(May 2019 - Aug 2019) IT Intern - Jump Design Group" key="1">
                     <p className="textAlign">
                       Researched and implemented innovative new intranet system. Maintained critical
                       systems and electronics to the highest standards.
@@ -117,10 +117,10 @@ class Work extends React.Component {
                 </Collapse>
               </div>
             </Timeline.Item>
-            <Timeline.Item label="Aug 2020 - March 2021" color="#1269C7">
+            <Timeline.Item color="#1269C7">
               <div onClick={((keyGen = 2), this.singleChange2)}>
                 <Collapse ghost activeKey={this.state.activeKey}>
-                  <Panel header="Undergraduate Research Assistant - Purdue Smart Cities" key="2">
+                  <Panel header="(Aug 2020 - March 2021) Undergraduate Research Assistant - Purdue Smart Cities" key="2">
                     <p className="textAlign">
                       Designing systems for deep learning reinforcement for indoor robot navigation,
                       using Python and TensorFlow. Used the documentation tool, Confluence, to
@@ -130,10 +130,10 @@ class Work extends React.Component {
                 </Collapse>
               </div>
             </Timeline.Item>
-            <Timeline.Item label="Sep 2019 - Now" color="#1269C7">
+            <Timeline.Item color="#1269C7">
               <div onClick={((keyGen = 3), this.singleChange3)}>
                 <Collapse ghost activeKey={this.state.activeKey}>
-                  <Panel header="Chief Design Officer - ParagonFlow" key="3">
+                  <Panel header="(Sep 2019 - Now) Chief Design Officer - ParagonFlow" key="3">
                     <p className="textAlign">
                       Lead and manage design initiatives company-wide, including graphic, UI/UX and
                       brand design. Lead and manage design initiatives company-wide, including
@@ -143,10 +143,10 @@ class Work extends React.Component {
                 </Collapse>
               </div>
             </Timeline.Item>
-            <Timeline.Item label="May 2020 - Aug 2020" color="#1269C7">
+            <Timeline.Item color="#1269C7">
               <div onClick={((keyGen = 4), this.singleChange4)}>
                 <Collapse ghost activeKey={this.state.activeKey}>
-                  <Panel header="Field Test Engineer - Thales" key="4">
+                  <Panel header="(May 2021 - Aug 2021) Field Test Engineer - Thales" key="4">
                     <p className="textAlign">
                       Maintained and monitored NYC Subway's communication based train controls.
                       Worked cross functional with Siemens and New Tech. Field tested new version of
